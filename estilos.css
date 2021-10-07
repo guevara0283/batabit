@@ -73,7 +73,7 @@ header img {
     position: absolute;
     left: calc(50% - 118px);
     top: 270px;
-    display: block;
+    display: inline-block;
     margin-top: 35px;
     padding: 15px;
     width: 229px;
@@ -301,6 +301,130 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
+.eye{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./assets/ico/eye.svg');
+}
+.dollar{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./assets/ico/dollar-sign.svg');
+}
+.check{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./assets/ico/check-circle.svg');
+}
+.comodin{
+    
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/images/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.comodin h2{
+    position: static;
+    width: 288px;
+    height: 26px;
+    left: calc(50% - 288px/2);
+    top: calc(50% - 26px/2);
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--just-white);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+}
+.main-plans-container h2{
+    /* Escoge el plan que mejor se ajuste a ti. */
+
+position: static;
+width: 288px;
+height: 52px;
+left: calc(50% - 288px/2);
+top: calc(50% - 52px/2 - 30px);
+
+/* H1 Mobile */
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 26px;
+/* or 108% */
+text-align: center;
+
+/* Warm Black */
+color: #201E1C;
 
 
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 24px auto;
 
+}
+.main-plans-container p{
+    /* Cualquier plan te da acceso completo a nuestra plataforma. */
+
+position: static;
+width: 288px;
+height: 36px;
+left: calc(50% - 288px/2);
+top: calc(50% - 36px/2 + 38px);
+
+/* H2 Mobile */
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+text-align: center;
+
+color: #757575;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 24px auto;
+}
+.plans-container--card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px; 
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0  4px 8px rgba(89, 73, 30, 0.16);
+}
