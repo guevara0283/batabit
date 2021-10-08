@@ -416,8 +416,16 @@ order: 1;
 flex-grow: 0;
 margin: 24px auto;
 }
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     display: flex;
     text-align: center;
     width: 70%;
@@ -430,6 +438,7 @@ margin: 24px auto;
     border-radius: 15px;
     box-shadow: 0  4px 8px rgba(89, 73, 30, 0.16);
 }
+
 .recomendado{
     position: absolute;
     width: 120px;
@@ -439,6 +448,30 @@ margin: 24px auto;
     left: calc(50% - 60px);
     font-size: 1.2rem;
     background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color : var(--just-white);
+}
+.anual{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--grey);
+    border-radius: 8px;
+    color : var(--just-white);
+}
+.basic{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--secondary-blue);
     border-radius: 8px;
     color : var(--just-white);
 }
@@ -487,16 +520,42 @@ margin: 24px auto;
     line-height: 1.8rem;
     color: black;
 }
-.plan-card--ca span{
-    display: inline;
+.plan-card--anual{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--grey);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan-card--basic{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+.spen{
+    display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('./assets/ico/right-arrow.svg');
+    background-image: url('./assets/ico/orange-right-arrow.svg');
     vertical-align: text-bottom;
 }
 .footer{
     position: absolute;
     width: 100%;
     height: 100%;
-    background
+    
 }
